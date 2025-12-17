@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+## Tentang Proyek
 
-## Project info
+Pascal's Triangle Explorer adalah aplikasi web edukatif yang membantu memahami konsep Segitiga Pascal secara visual dan interaktif. Aplikasi ini menampilkan dua pendekatan algoritma berbeda (iteratif dan rekursif) lengkap dengan visualisasi proses perhitungan dan analisis kompleksitas waktu.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Cocok digunakan sebagai media pembelajaran untuk mata kuliah Algoritma dan Struktur Data, Matematika Diskrit, atau Pemrograman Lanjut.
 
-## How can I edit this code?
+## Fitur Utama
 
-There are several ways of editing your application.
+**Dua Metode Perhitungan** - Metode iteratif (bottom-up) yang efisien untuk nilai besar, dan metode rekursif (top-down) yang lebih intuitif mengikuti definisi matematis.
 
-**Use Lovable**
+**Visualisasi Interaktif** - Tampilan setengah segitiga dengan sifat simetri, animasi smooth, dan interface responsif yang mudah digunakan.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+**Analisis Algoritma** - Penjelasan kompleksitas waktu dengan visualisasi step-by-step proses perhitungan untuk pemahaman lebih dalam.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Teknologi
 
-**Use your preferred IDE**
+Dibangun dengan **Vite**, **TypeScript**, **React**, **Tailwind CSS**, dan **shadcn/ui** untuk performa optimal dan developer experience yang lancar.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Memulai
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Instalasi Lokal
 
-Follow these steps:
+```bash
+# Clone repository
+git clone https://github.com/sayyeone/pascal-triangle-explorer.git
+cd pascal-triangle-explorer
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Jalankan development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Aplikasi akan berjalan di `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Algoritma
 
-## What technologies are used for this project?
+### Metode Iteratif
+Membangun segitiga baris per baris dari atas ke bawah. Setiap elemen adalah penjumlahan dua elemen di atasnya. Kompleksitas waktu O(n²), efisien dan stabil untuk nilai besar.
 
-This project is built with:
+### Metode Rekursif
+Menggunakan definisi koefisien binomial C(n,k) = C(n-1,k-1) + C(n-1,k). Lebih intuitif namun kompleksitas waktu O(2ⁿ) membuat performa lebih rendah untuk nilai besar.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Deployment
 
-## How can I deploy this project?
+**Via Lovable**: Buka project → **Share** → **Publish**
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+**Custom Domain**: Project → Settings → Domains → Connect Domain. [Dokumentasi](https://docs.lovable.dev/features/custom-domain)
 
-## Can I connect a custom domain to my Lovable project?
+**Alternatif**: Deploy ke Vercel, Netlify, atau GitHub Pages
 
-Yes, you can!
+## Kontribusi
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Kontribusi sangat diterima! Fork repository, buat perubahan, dan submit Pull Request. Untuk bug atau ide fitur baru, buat issue di GitHub.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Lisensi
+
+Dilisensikan di bawah [MIT License](https://opensource.org/licenses/MIT)
+
+---
+
+<p align="center">
+  made with ❤️ by sayyeone<br>
+</p>
